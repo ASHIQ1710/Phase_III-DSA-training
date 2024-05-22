@@ -54,7 +54,6 @@ class Tree:
             print(node.data, end=" ")
     
 
-
 # Example usage:
 tree = Tree()
 tree.insert(5)
