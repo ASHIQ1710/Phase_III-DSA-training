@@ -53,44 +53,7 @@ class Tree:
             self._print_postorder_recursive(node.right)
             print(node.data, end=" ")
     
-def levelOrderTraversal(root):
-    if root is None:
-        return
-    result=[]
-    Q=[root]
-    while len(Q)>0:
-        n=len(Q)
-        subresult=[]
-        for i in range(n):
-            # remove the first element from the list
-            node=Q.pop(0)
-            # add the value of the node to the subresult
-            subresult.append(node.data)
-            # add the left child to the queue
-            if node.left is not None:
-                Q.append(node.left)
-            # add the right child to the queue
-            if node.right is not None:
-                Q.append(node.right)
-        result.append(subresult)
-    return result
 
-def findLeftView(root):
-    if root is None:
-        return
-    result=[]
-    Q=[root]
-    while len(Q)>0:
-        n=len(Q)
-        for i in range(n):
-            node=Q.pop(0)
-            if i==0:
-                result.append(node.data)
-            if node.left is not None:
-                Q.append(node.left)
-            if node.right is not None:
-                Q.append(node.right)
-    return result
 
 # Example usage:
 tree = Tree()
