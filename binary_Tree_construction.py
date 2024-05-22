@@ -74,5 +74,3 @@ print("\nPostorder traversal:")
 tree.print_postorder()
 
 print("\nLevel order traversal:")# [[5], [3, 7], [2, 4, 6, 8]]
-print(levelOrderTraversal(tree.root)) # [[5], [3, 7], [2, 4, 6, 8]]
-print("\nLeft view of the tree:",findLeftView(tree.root))# [5, 3, 2]
