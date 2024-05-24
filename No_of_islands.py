@@ -18,7 +18,7 @@ class Solution:
                 Q.append([newRow, newCol])
  
  
-    def numIslands(self, grid: List[List[str]]) -> int:
+    #def numIslands(self, grid: List[List[str]]) -> int:
         totalRows = len(grid)
         totalCols = len(grid[0])
         totalIslands = 0 
