@@ -33,8 +33,10 @@ def performQuickSort(nums):
  
  
  
-nums = [8, 1, 7, 6, 5, 4, 3, 2, -1, -2, -3, -100, 100]
+nums = [2,0,2,1,1,0]
  
 print("Before sorting:", nums)
 performQuickSort(nums)
 print("After sorting:", nums)
+#Time complexity: O(nlogn) in average case, O(n^2) in worst case
+#Space complexity: O(logn) in average case, O(n) in worst case
